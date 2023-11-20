@@ -7,7 +7,66 @@
     <link rel="stylesheet" href="/public/styles.css" />
     <title>TailwindCSS</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="bg-gray-200 flex items-center justify-center h-screen">
+    <!-- Кнопка для открытия модального окна -->
+    <button
+      id="openModalBtn"
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    >
+      Открыть модальное окно
+    </button>
+
+    <!-- Модальное окно -->
+    <div
+      id="myModal"
+      class="fixed inset-0 overflow-auto flex items-center justify-center hidden"
+    >
+      <div
+        class="relative modal-container bg-white max-w-md mx-auto p-4 rounded shadow-lg"
+      >
+        <!-- Контент модального окна -->
+        <div class="text-gray-800">
+          <p class="mb-4">Привет! Это модальное окно.</p>
+          <button
+            id="closeModalBtn"
+            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Закрыть
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-stretch">
+      <div
+        class="flex-col fill-[linear-gradient(180deg,#000_-0.22%,#171717_246.74%)] stroke-[0.888px] stroke-violet-500 overflow-hidden relative flex min-h-[82px] w-full items-center mt-4 px-2 py-1 max-md:max-w-full"
+      >
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/041590fc-8ff5-4f9d-840f-d4aac7ff8006?"
+          class="absolute z-[-1] h-full w-full object-cover object-center inset-0"
+        />
+        <img
+          loading="lazy"
+          srcset="..."
+          class="aspect-[5.82] object-contain object-center w-[448px] fill-neutral-900 overflow-hidden max-md:max-w-full"
+        />
+      </div>
+    </div>
+    <script>
+      // JavaScript для управления видимостью модального окна
+      const openModalBtn = document.getElementById("openModalBtn");
+      const closeModalBtn = document.getElementById("closeModalBtn");
+      const modal = document.getElementById("myModal");
+
+      // Открыть модальное окно
+      openModalBtn.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+      });
+
+      // Закрыть модальное окно
+      closeModalBtn.addEventListener("click", () => {
+        modal.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
