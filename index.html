@@ -7,49 +7,89 @@
     <link rel="stylesheet" href="/public/styles.css" />
     <title>TailwindCSS</title>
   </head>
-  <body class="bg-gray-200 flex items-center justify-center h-screen">
-    <!-- Кнопка для открытия модального окна -->
-    <button
-      id="openModalBtn"
-      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  <!-- class="bg-neutral-900" -->
+  <body>
+    <header class="flex">
+      <!-- <a
+        class="uppercase font-bold text-red-700 text-6xl animate-pulse bg-gradient-to-r from-red-400 via-violet-400 to-yellow-400 bg-clip-text text-transparent"
+        >UWP DIGITAL</a
+      > -->
+      <nav>
+        <ul class="flex">
+          <li class="mr-2"><a>Home</a></li>
+          <li class="mr-2"><a>About</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div></div>
+    <div class="ms-52 my-10 text-5xl font-extrabold">
+      <span
+        class="animate-pulse bg-gradient-to-r from-pink-500 via-green-500 to-violet-500 bg-clip-text text-transparent"
+      >
+        Tailwind CSS Animation
+      </span>
+    </div>
+    <div
+      class="flex relative items-center justify-center border-black border-4s hadow-indigo-200 shadow-violet-100 bg-neutral-900 m-auto max-w-2xl rounded-3xl"
     >
-      Открыть модальное окно
-    </button>
+      <a class="flex border-2 pr-6 pl-6 pt-1 pb-1 rounded-3xl text-white">
+        <span class="mr-2"
+          ><svg
+            width="23"
+            height="22"
+            viewBox="0 0 23 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <
+            <path
+              d="M11.5632 2.75V19.25C8.35482 19.25 5.9708 15.0513 5.9708 15.0513H3.31315C2.80689 15.0513 2.39648 14.6409 2.39648 14.1346V7.79662C2.39648 7.29034 2.80689 6.87995 3.31315 6.87995H5.9708C5.9708 6.87995 8.35482 2.75 11.5632 2.75Z"
+              fill="#9463FE"
+              stroke="#9463FE"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15.2285 6.875C15.5141 7.13006 15.7731 7.4157 16.0004 7.72695C16.6671 8.63977 17.0618 9.77272 17.0618 11C17.0618 12.2166 16.6739 13.3406 16.0177 14.2493C15.7862 14.5697 15.5214 14.8634 15.2285 15.125"
+              stroke="#9463FE"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.2539 18.8768C18.9341 17.277 20.7291 14.3481 20.7291 11C20.7291 7.70389 18.9894 4.8141 16.3782 3.19873"
+              stroke="#9463FE"
+              stroke-linecap="round"
+            />
+            >
+          </svg></span
+        >ON
+      </a>
+      <!--Предпологаемая анимация по типу Siri-->
+      <div>
+        <img class="ml-5 mb-1" src="./public/image/ai.png" />
+      </div>
+      <!--Кнопка для выбора языка-->
+      <div><img src="./public/image/language.png" class="ml-5" /></div>
+      <!-- Кнопка для открытия модального окна -->
+      <div>
+        <img id="openModalBtn" src="./public/image/down.png" class="ml-3" />
+      </div>
+    </div>
 
     <!-- Модальное окно -->
     <div
       id="myModal"
-      class="fixed inset-0 overflow-auto flex items-center justify-center hidden"
+      class="max-w-2xl items-center justify-center hidden border-red-800 mx-auto p-4 rounded shadow-lg"
     >
-      <div
-        class="relative modal-container bg-white max-w-md mx-auto p-4 rounded shadow-lg"
-      >
-        <!-- Контент модального окна -->
-        <div class="text-gray-800">
-          <p class="mb-4">Привет! Это модальное окно.</p>
-          <button
-            id="closeModalBtn"
-            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-          >
-            Закрыть
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-col items-stretch">
-      <div
-        class="flex-col fill-[linear-gradient(180deg,#000_-0.22%,#171717_246.74%)] stroke-[0.888px] stroke-violet-500 overflow-hidden relative flex min-h-[82px] w-full items-center mt-4 px-2 py-1 max-md:max-w-full"
-      >
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/041590fc-8ff5-4f9d-840f-d4aac7ff8006?"
-          class="absolute z-[-1] h-full w-full object-cover object-center inset-0"
-        />
-        <img
-          loading="lazy"
-          srcset="..."
-          class="aspect-[5.82] object-contain object-center w-[448px] fill-neutral-900 overflow-hidden max-md:max-w-full"
-        />
+      <!-- Контент модального окна -->
+      <div class="text-gray-800">
+        <p class="mb-4">Привет! Это модальное окно.</p>
+        <button
+          id="closeModalBtn"
+          class="bg-violet-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Закрыть
+        </button>
       </div>
     </div>
     <script>
