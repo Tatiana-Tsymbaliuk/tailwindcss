@@ -22,16 +22,19 @@
         </ul>
       </nav>
     </header>
-    <div></div>
-    <div class="ms-52 my-10 text-5xl font-extrabold">
+    <div>
+      <button type="button" class="border-gradient border-2">Hover me</button>
+    </div>
+
+    <!-- <div class="ms-52 my-10 text-5xl font-extrabold">
       <span
         class="animate-pulse bg-gradient-to-r from-pink-500 via-green-500 to-violet-500 bg-clip-text text-transparent"
       >
         Tailwind CSS Animation
       </span>
-    </div>
+    </div> -->
     <div
-      class="flex relative items-center justify-center border-black border-4s hadow-indigo-200 shadow-violet-100 bg-neutral-900 m-auto max-w-2xl rounded-3xl"
+      class="flex relative items-center justify-center border-4 border-black shadow-violet-500 bg-[#171717] m-auto max-w-2xl rounded-3xl"
     >
       <a class="flex border-2 pr-6 pl-6 pt-1 pb-1 rounded-3xl text-white">
         <span class="mr-2"
@@ -65,31 +68,67 @@
         >ON
       </a>
       <!--Предпологаемая анимация по типу Siri-->
-      <div>
+      <div class="ml-5">
         <img class="ml-5 mb-1" src="./public/image/ai.png" />
       </div>
       <!--Кнопка для выбора языка-->
-      <div><img src="./public/image/language.png" class="ml-5" /></div>
+      <div class="ml-5 p-0.5 border-2 border-white rounded-full">
+        <img
+          src="./public/image/GB.svg"
+          class="border-2 border-white rounded-full"
+        />
+      </div>
       <!-- Кнопка для открытия модального окна -->
       <div>
-        <img id="openModalBtn" src="./public/image/down.png" class="ml-3" />
+        <img
+          id="openModalBtn"
+          src="./public/image/open-modal.svg"
+          class="ml-3 p-2 border-2 border-white rounded-full"
+        />
       </div>
     </div>
 
     <!-- Модальное окно -->
     <div
       id="myModal"
-      class="max-w-2xl items-center justify-center hidden border-red-800 mx-auto p-4 rounded shadow-lg"
+      class="max-w-2xl items-center mb-10 justify-center hidde mx-auto rounded-3xl shadow-lg"
     >
       <!-- Контент модального окна -->
-      <div class="text-gray-800">
-        <p class="mb-4">Привет! Это модальное окно.</p>
-        <button
+      <div class="bg-[#171717] -mt-7 rounded-3xl pb-10">
+        <form>
+          <div class="flex mb-10">
+            <input
+              type="text"
+              name="message"
+              class="flex-1 border-2 border-white focus:border-pink-500 p-3 bg-gray bg-transparent mr-3 ml-3 mt-10 py-1.5 pl-1 text-white rounded-lg"
+            />
+            <button
+              type="submit"
+              class="border-2 mr-3 p-3 border-gradient bg-gray mt-10"
+            >
+              <svg
+                width="19"
+                height="16"
+                viewBox="0 0 19 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 1L0.5 5.66667M0.5 5.66667L5 10.3333M0.5 5.66667H16.8125C17.7445 5.66667 18.5 6.45014 18.5 7.41667V15"
+                  stroke="#9463FE"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </form>
+        <!-- <button
           id="closeModalBtn"
-          class="bg-violet-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+          class="bg-violet-600 flex justify-center hover:bg-violet-300 text-white font-bold py-2 px-4 rounded"
         >
           Закрыть
-        </button>
+        </button> -->
       </div>
     </div>
     <script>
