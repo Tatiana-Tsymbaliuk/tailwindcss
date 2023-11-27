@@ -9,8 +9,8 @@
 /coverage
 
 # production
-/build
-/public/*.css
+# /build
+# /public/*.css
 
 # misc
 .DS_Store
