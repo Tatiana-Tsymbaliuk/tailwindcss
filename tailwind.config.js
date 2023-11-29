@@ -21,23 +21,13 @@ module.exports = {
       gray: "#323232",
       white: "#FFFFFF",
       violet: "#9463FE",
+      yellow: "#F4F73C",
     },
-    extend: {
-      borderColor: {
-        "gradient-violet-write": "linear-gradient(to bottom, #8B60FA, #FFFFFF)",
-      },
-    },
+    extend: {},
   },
   plugins: [
     function ({ addUtilities }) {
       const newUtilities = {
-        ".border-gradient": {
-          width: "200px",
-          height: "200px",
-          "border-radius": "50%",
-          border: "10px solid transparent",
-          "border-image": "linear-gradient(45deg, #ff0000, #00ff00, #0000ff) 1",
-        },
         ".bg-siri": {
           "background-image": "url('../public/image/bg.svg')",
           "background-repeat": "no-repeat",
