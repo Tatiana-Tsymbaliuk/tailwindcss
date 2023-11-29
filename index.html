@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/styles.css" />
+    <link rel="stylesheet" href="./public/styles.css" />
     <title>TailwindCSS</title>
   </head>
   <!-- class="bg-neutral-900" -->
-  <body>
+  <body class="bg-[#171717]">
     <header class="flex">
       <!-- <a
-        class="uppercase font-bold text-red-700 text-6xl animate-pulse bg-gradient-to-r from-red-400 via-violet-400 to-yellow-400 bg-clip-text text-transparent"
+        class="uppercase font-bold text-red-700 text-6xl animate-pulse bg-gradient-to-r from-gray via-violet to-white bg-clip-text text-transparent"
         >UWP DIGITAL</a
       > -->
       <nav>
-        <ul class="flex">
+        <ul class="flex text-white">
           <li class="mr-2"><a>Home</a></li>
           <li class="mr-2"><a>About</a></li>
           <li><a>Contact</a></li>
@@ -25,121 +25,139 @@
 
     <!-- <div class="ms-52 my-10 text-5xl font-extrabold">
       <span
-        class="animate-pulse bg-gradient-to-r from-pink-500 via-green-500 to-violet-500 bg-clip-text text-transparent"
+        class="animate-pulse bg-gradient-to-r from-pink-500 via-blue-500 to-violet-500 bg-clip-text text-transparent"
       >
-        Tailwind CSS Animation
+        HI I AM UNITY
       </span>
     </div> -->
-    <div
-      class="flex relative items-center justify-center border-4 border-black shadow-violet-500 bg-[#171717] m-auto max-w-2xl rounded-3xl"
-    >
-      <a class="flex border-2 pr-6 pl-6 pt-1 pb-1 rounded-3xl text-white">
-        <span class="mr-2"
-          ><svg
-            width="23"
-            height="22"
-            viewBox="0 0 23 22"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <
-            <path
-              d="M11.5632 2.75V19.25C8.35482 19.25 5.9708 15.0513 5.9708 15.0513H3.31315C2.80689 15.0513 2.39648 14.6409 2.39648 14.1346V7.79662C2.39648 7.29034 2.80689 6.87995 3.31315 6.87995H5.9708C5.9708 6.87995 8.35482 2.75 11.5632 2.75Z"
-              fill="#9463FE"
-              stroke="#9463FE"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M15.2285 6.875C15.5141 7.13006 15.7731 7.4157 16.0004 7.72695C16.6671 8.63977 17.0618 9.77272 17.0618 11C17.0618 12.2166 16.6739 13.3406 16.0177 14.2493C15.7862 14.5697 15.5214 14.8634 15.2285 15.125"
-              stroke="#9463FE"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M16.2539 18.8768C18.9341 17.277 20.7291 14.3481 20.7291 11C20.7291 7.70389 18.9894 4.8141 16.3782 3.19873"
-              stroke="#9463FE"
-              stroke-linecap="round"
-            />
-            >
-          </svg></span
-        >ON
-      </a>
-      <!--Предпологаемая анимация по типу Siri-->
-      <div class="ml-5">
-        <img class="ml-5 mb-1" src="./public/image/ai.png" />
-      </div>
-      <!--Кнопка для выбора языка-->
-      <div class="ml-5 p-0.5 border-2 border-white rounded-full">
-        <img
-          src="./public/image/GB.svg"
-          class="border-2 border-white rounded-full"
-        />
-      </div>
-      <!-- Кнопка для открытия модального окна -->
-      <div>
-        <img
-          id="openModalBtn"
-          src="./public/image/open-modal.svg"
-          class="ml-3 p-2 border-2 border-white rounded-full"
-        />
-      </div>
-    </div>
 
-    <!-- Модальное окно -->
-    <div
-      id="myModal"
-      class="max-w-2xl items-center mb-10 justify-center hidde mx-auto rounded-3xl shadow-lg"
-    >
-      <!-- Контент модального окна -->
-      <div class="bg-[#171717] -mt-7 rounded-3xl pb-10">
-        <form>
-          <div class="flex mb-10">
-            <input
-              type="text"
-              name="message"
-              class="flex-1 border-gradient p-3 mr-3 ml-3 mt-10 py-1.5 pl-1 text-white"
-            />
-            <button type="submit" class="mr-3 p-3 mt-10 border-gradient">
-              <svg
-                width="19"
-                height="16"
-                viewBox="0 0 19 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 1L0.5 5.66667M0.5 5.66667L5 10.3333M0.5 5.66667H16.8125C17.7445 5.66667 18.5 6.45014 18.5 7.41667V15"
-                  stroke="#9463FE"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-          </div>
-        </form>
-        <button
-          id="closeModalBtn"
-          class="bg-violet-600 flex justify-center hover:bg-violet-300 text-white font-bold py-2 px-4 rounded"
+    <!-- //////////////////////////////////// -->
+
+    <div class="container mx-auto mt-40 mb-0">
+      <div
+        class="relative p-0.5 bg-gradient-to-b lg:w-[367px] from-violet to-[#171717] rounded-3xl m-auto items-stretch"
+      >
+        <div
+          class="flex md:h-[70px] lg:w-[364px] items-center justify-center border-4 bg-[#171717] m-auto rounded-3xl"
         >
-          Закрыть
-        </button>
+          <div
+            class="p-px h-[36px] bg-gradient-to-b from-white to-gray rounded-3xl"
+          >
+            <a
+              class="flex h-[33px] pr-6 pl-6 pt-1 pb-1 rounded-3xl bg-[#171717] text-white"
+            >
+              <span class="mr-2"
+                ><svg
+                  width="23"
+                  height="22"
+                  viewBox="0 0 23 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <
+                  <path
+                    d="M11.5632 2.75V19.25C8.35482 19.25 5.9708 15.0513 5.9708 15.0513H3.31315C2.80689 15.0513 2.39648 14.6409 2.39648 14.1346V7.79662C2.39648 7.29034 2.80689 6.87995 3.31315 6.87995H5.9708C5.9708 6.87995 8.35482 2.75 11.5632 2.75Z"
+                    fill="#9463FE"
+                    stroke="#9463FE"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.2285 6.875C15.5141 7.13006 15.7731 7.4157 16.0004 7.72695C16.6671 8.63977 17.0618 9.77272 17.0618 11C17.0618 12.2166 16.6739 13.3406 16.0177 14.2493C15.7862 14.5697 15.5214 14.8634 15.2285 15.125"
+                    stroke="#9463FE"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.2539 18.8768C18.9341 17.277 20.7291 14.3481 20.7291 11C20.7291 7.70389 18.9894 4.8141 16.3782 3.19873"
+                    stroke="#9463FE"
+                    stroke-linecap="round"
+                  />
+                  >
+                </svg></span
+              >ON
+            </a>
+          </div>
+          <!--Предпологаемая анимация по типу Siri-->
+          <div class="ml-[17px]">
+            <img class="mb-1" src="./public/image/ai.png" />
+          </div>
+          <!--Кнопка для выбора языка-->
+          <div
+            class="ml-5 p-px bg-gradient-to-b from-white to-gray rounded-full"
+          >
+            <div class="p-[1.5px] bg-[#171717] rounded-full">
+              <img
+                src="./public/image/GB.svg"
+                class="border border-white rounded-full"
+              />
+            </div>
+          </div>
+          <!-- Кнопка для открытия модального окна -->
+          <div
+            class="ml-3 p-px bg-gradient-to-b from-white to-gray rounded-full"
+          >
+            <div class="flex p-2 bg-[#171717] rounded-full">
+              <button id="toggleModalBtn" onclick="toggleModal()">
+                <img id="btnIcon" src="./public/image/open-modal.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно -->
+
+      <div
+        id="myModals"
+        class="p-0.5 mt-[-73px] max-w-2xl hidden items-center justify-center hidde bg-gradient-to-b from-violet to-[#171717] mx-auto rounded-3xl"
+      >
+        <div class="max-w-2xl items-center justify-center mx-auto rounded-3xl">
+          <!-- Контент модального окна -->
+          <div class="bg-[#171717] rounded-3xl pt-40 pb-[9px] max-auto">
+            <form class="">
+              <div class="flex">
+                <div
+                  class="w-full p-px ml-[9.5px] mr-[11px] bg-gradient-to-b from-white to-gray rounded-[10px]"
+                >
+                  <input
+                    type="text"
+                    name="message"
+                    class="rounded-[10px] w-full p-3 pl-1 bg-gray text-white m-auto"
+                  />
+                </div>
+                <div
+                  class="flex p-px mr-[9.5px] bg-gradient-to-b from-violet to-gray rounded-[10px]"
+                >
+                  <button type="submit" class="p-4 bg-gray rounded-[10px]">
+                    <svg
+                      width="19"
+                      height="16"
+                      viewBox="0 0 19 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 1L0.5 5.66667M0.5 5.66667L5 10.3333M0.5 5.66667H16.8125C17.7445 5.66667 18.5 6.45014 18.5 7.41667V15"
+                        stroke="#9463FE"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!-- <button
+              id="closeModalBtn"
+              class="bg-violet-600 flex justify-center hover:bg-violet-300 text-white font-bold py-2 px-4 rounded"
+            >
+              Закрыть
+            </button> -->
+          </div>
+        </div>
       </div>
     </div>
-    <script>
-      // JavaScript для управления видимостью модального окна
-      const openModalBtn = document.getElementById("openModalBtn");
-      const closeModalBtn = document.getElementById("closeModalBtn");
-      const modal = document.getElementById("myModal");
 
-      // Открыть модальное окно
-      openModalBtn.addEventListener("click", () => {
-        modal.classList.remove("hidden");
-      });
-
-      // Закрыть модальное окно
-      closeModalBtn.addEventListener("click", () => {
-        modal.classList.add("hidden");
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

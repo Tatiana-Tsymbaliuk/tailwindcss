@@ -3,15 +3,24 @@ module.exports = {
   content: ["./index.html"],
   theme: {
     screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1440px",
+      sm: "320px",
+      md: "478px",
+      lg: "768px",
+      xl: "1920px",
+    },
+    container: {
+      center: true,
+      padding: {
+        sm: "0.313rem",
+        md: "0.438rem",
+        lg: "4.438rem",
+        xl: "8.438rem",
+      },
     },
     colors: {
       gray: "#323232",
       white: "#FFFFFF",
-      violet: "#8B60FA",
+      violet: "#9463FE",
     },
     extend: {
       borderColor: {
@@ -23,17 +32,16 @@ module.exports = {
     function ({ addUtilities }) {
       const newUtilities = {
         ".border-gradient": {
-          "border-width": "0.125rem", // Ширина границы
-          "border-style": "solid", // Стиль границы
-          "border-image": "linear-gradient(to bottom, #8B60FA, #323232) 1", // Градиентная граница
-          "background-color": "#323232", // Цвет фона
-          "border-radius": "0.5rem", // Закругленные углы
-          "background-origin": "border-box",
-          "box-shadow": "inset 0 100vw white",
-          // "-webkit-mask":
-          //   "linear-gradient(#fff 0 0) padding-box linear-gradient(#fff 0 0)", // Маска для Webkit
-          // "-webkit-mask-composite": "xor", // Композитная операция маски для Webkit
-          // "mask-composite": "exclude", // Композитная операция маски
+          width: "200px",
+          height: "200px",
+          "border-radius": "50%",
+          border: "10px solid transparent",
+          "border-image": "linear-gradient(45deg, #ff0000, #00ff00, #0000ff) 1",
+        },
+        ".bg-siri": {
+          "background-image": "url('../public/image/bg.svg')",
+          "background-repeat": "no-repeat",
+          "background-size": "contain",
         },
       };
 
