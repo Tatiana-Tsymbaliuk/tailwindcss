@@ -81,11 +81,29 @@
           <div
             class="ml-5 p-px bg-gradient-to-b from-white to-gray rounded-full"
           >
-            <div class="p-[1.5px] bg-[#171717] rounded-full">
-              <img
-                src="./public/image/GB.svg"
-                class="border border-white rounded-full"
-              />
+            <div class="flex p-[1.5px] bg-[#171717] rounded-full">
+              <button class="relative" onclick="toggleLanguage()">
+                <img
+                  src="./public/image/GB.svg"
+                  class="border border-white rounded-full"
+                />
+                <section
+                  id="myLanguage"
+                  class="py-2 mt-[-1px] hidden border border-white rounded-full absolute"
+                >
+                  <ul>
+                    <li class="flex">
+                      <img class="pb-[6px]" src="./public/image/flag-uk.svg" />
+                    </li>
+                    <li>
+                      <img class="pb-[6px]" src="./public/image/flag-es.svg" />
+                    </li>
+                    <li>
+                      <img class="pb-0" src="./public/image/flag-sw.svg" />
+                    </li>
+                  </ul>
+                </section>
+              </button>
             </div>
           </div>
           <!-- Кнопка для открытия модального окна -->
@@ -145,12 +163,6 @@
                 </div>
               </div>
             </form>
-            <!-- <button
-              id="closeModalBtn"
-              class="bg-violet-600 flex justify-center hover:bg-violet-300 text-white font-bold py-2 px-4 rounded"
-            >
-              Закрыть
-            </button> -->
           </div>
         </div>
       </div>
